@@ -1,3 +1,4 @@
+set number " show line numbers
 "=====================
 " Vundle Configuration
 "=====================
