@@ -1,0 +1,29 @@
+conky.config = {
+	alignment = 'bottom_right',
+	background = true,
+	cpu_avg_samples = 2,
+	double_buffer = true,
+	font = 'Bitstream Vera Sans:size=20',
+	gap_x = 50,
+	gap_y = 30,
+	minimum_width = 200,
+	no_buffers = true,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_transparent = true,
+	update_interval = 2.0,
+	use_xft = true,
+	color0 = 'FFFFFF', 
+	color1 = 'FFFFFF', 
+	color2 = 'FFFFFF', 
+	color3 = 'FFFFFF', 
+	color4 = 'FFFFFF', 
+	color5 = 'FFFFFF'  
+
+}
+
+conky.text = [[
+	${font Poiret One:size=15}Github Contributions${font} ${font Poiret One:size=30}${execi 7200 python ~/scripts/gontrihutions.py}${font}
+	${voffset -40}${font Poiret One:size=10:weight=Bold}since${font}${font Poiret One:size=20} LAST  YEAR${font}
+	${voffset -15}${font Poiret One:size=15}@ i a m t a l h a a s g h a r${font}
+]];
