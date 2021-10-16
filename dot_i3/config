@@ -398,9 +398,9 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
+exec_always --no-startup-id ~/.config/polybar/launch.sh --forest
 exec --no-startup-id ~/scripts/diskey.sh
 exec --no-startup-id redshift-gtk
 exec --no-startup-id wal -nR
 exec --no-startup-id conky
-exec_always --no-startup-id ~/.config/polybar/launch.sh --forest
 
