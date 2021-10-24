@@ -66,7 +66,7 @@ bindsym $mod+Ctrl+s exec "pactl -- set-sink-volume 0 -5%; notify-send 'volume do
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec /usr/bin/firefox
-bindsym $mod+F3 exec pcmanfm
+bindsym $mod+F3 exec xfce4-terminal -e ranger #pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
@@ -427,7 +427,6 @@ mode "$mode_gaps_outer" {
 }
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh --forest
-exec --no-startup-id ~/scripts/diskey.sh
 exec --no-startup-id redshift-gtk
 exec --no-startup-id wal -nR
 exec --no-startup-id conky
