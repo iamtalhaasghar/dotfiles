@@ -68,7 +68,7 @@ bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec /usr/bin/firefox
 bindsym $mod+F3 exec xfce4-terminal -e ranger #pcmanfm
 # bindsym $mod+F3 exec ranger
-bindsym $mod+Shift+F3 exec pcmanfm_pkexec
+bindsym $mod+Shift+F3 exec pcmanfm
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
