@@ -116,6 +116,6 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # load pywal color scheme
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 # pyenv initialization
-eval "$(pyenv init -)"
+#eval "$(pyenv init -)"
