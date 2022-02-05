@@ -4,7 +4,7 @@ conky.config = {
 	cpu_avg_samples = 2,
 	double_buffer = true,
 	font = 'Bitstream Vera Sans:size=20',
-	gap_x = 50,
+	gap_x = 30,
 	gap_y = 30,
 	minimum_width = 200,
 	no_buffers = true,
@@ -26,5 +26,5 @@ conky.config = {
 }
 
 conky.text = [[
-	${font Poiret One:size=15:weight=Light}${execi 1800 whatstrending 10 pakistan}${font}
+	${font Poiret One:size=12:weight=Bold}${execi 1800 whatstrending 30 pakistan}${font}
 ]];
