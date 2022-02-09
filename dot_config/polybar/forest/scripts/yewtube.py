@@ -14,6 +14,7 @@ proc1.stdout.close() # Allow proc1 to receive a SIGPIPE if proc2 exits.
 out, err = proc2.communicate()
 
 try:
-    print('',re.findall('title."(.+)"', str(out))[0])
+    title = re.findall('title."(.+)"', out.decode('utf-8'))[0]
+    print('', title.strip())
 except Exception as e:
-    print('silence everywhere')
+    print(' ')
