@@ -26,5 +26,5 @@ conky.config = {
 }
 
 conky.text = [[
-	${font Poiret One:size=12:weight=Bold}${execi 1800 wt 30 pakistan}${font}
+	${font Poiret One:size=12:weight=Bold}${execi 1800 wt 0 pakistan}${font}
 ]];
