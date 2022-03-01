@@ -1,1 +1,1 @@
-set numbers
+set number
