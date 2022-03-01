@@ -11,7 +11,12 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons' -- optional, for file icon
 
+  use 'folke/tokyonight.nvim'
+
 end)
+
+-- Lua
+vim.cmd[[colorscheme tokyonight]]
 
 local lspconfig = require('lspconfig')
 
