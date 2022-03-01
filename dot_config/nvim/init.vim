@@ -1,3 +1,3 @@
 set number
-lua require('plugins')
+lua require('coq_nvim')
 
