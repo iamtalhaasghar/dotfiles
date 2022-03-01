@@ -15,7 +15,8 @@ require('packer').startup(function()
 
 end)
 
--- Lua
+-- tokyonight theme
+vim.g.tokyonight_style = "night"
 vim.cmd[[colorscheme tokyonight]]
 
 local lspconfig = require('lspconfig')
