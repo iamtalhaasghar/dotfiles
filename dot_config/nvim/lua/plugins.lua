@@ -13,7 +13,11 @@ require('packer').startup(function()
 
   use 'folke/tokyonight.nvim'
 
+  use "beauwilliams/focus.nvim"
 end)
+
+
+require("focus").setup()
 
 -- tokyonight theme
 vim.g.tokyonight_style = "night"
