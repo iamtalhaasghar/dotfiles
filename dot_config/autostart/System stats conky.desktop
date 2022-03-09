@@ -2,9 +2,9 @@
 Encoding=UTF-8
 Version=0.9.4
 Type=Application
-Name=weather
+Name=System stats conky
 Comment=
-Exec=conky -c /home/programmer/.config/conky/weather_xfce.conf &
+Exec=conky -c /home/programmer/.config/conky/system_info_xfce.conf &
 OnlyShowIn=XFCE;
 RunHook=0
 StartupNotify=false
