@@ -1,5 +1,5 @@
 conky.config = {
-	alignment = 'bottom_left',
+	alignment = 'bottom_right',
 	background = true,
 	cpu_avg_samples = 2,
 	double_buffer = true,
@@ -26,6 +26,7 @@ conky.config = {
 }
 
 conky.text = [[
+	${execp ~/scripts/wal-colors.sh -f}
 	${font Poiret One:size=15}Github Contributions${font} ${font Poiret One:size=30}${execi 7200 python ~/scripts/gontrihutions.py}${font}
 	${voffset -40}${font Poiret One:size=10:weight=Bold}since${font}${font Poiret One:size=20} LAST  YEAR${font}
 	${voffset -15}${font Poiret One:size=15}@ i a m t a l h a a s g h a r${font}
