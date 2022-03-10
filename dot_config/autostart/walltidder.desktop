@@ -9,5 +9,5 @@ OnlyShowIn=XFCE;
 RunHook=0
 StartupNotify=false
 ***REMOVED***inal=false
-Hidden=false
+Hidden=true
 
