@@ -1,5 +1,5 @@
 conky.config = {
-    alignment = 'bottom_left',
+    alignment = 'top_left',
     background = true,
     border_width = 1,
     cpu_avg_samples = 2,
@@ -39,7 +39,5 @@ conky.config = {
 }
 
 conky.text = [[
-
-${execp ~/scripts/wal-colors.sh -2}
-${execi 1800 wt 0 pakistan}${execp ~/scripts/wal-colors.sh -3}${execi 1800 wt -1}
+${execp ~/scripts/wal-colors.sh -1}${execi 7201 cat ~/.cache/timetable.json | jq ".$(date +%a)"}${execp ~/scripts/wal-colors.sh -2}${execi 1800 wt 0 pakistan}${execp ~/scripts/wal-colors.sh -3}${execi 1800 wt -1}
 ]];
