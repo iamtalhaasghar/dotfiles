@@ -14,7 +14,7 @@ conky.config = {
     extra_newline = false,
     font = 'Poiret One:size=12:weight=Bold',
     gap_x = 20,
-    gap_y = 10,
+    gap_y = 0,
     minimum_height = 5,
     minimum_width = 5,
     net_avg_samples = 2,
@@ -40,7 +40,8 @@ conky.config = {
 
 conky.text = [[
 ${execp ~/scripts/wal-colors.sh -f}
-${execi 7201 cat ~/.cache/timetable.json | jq ".$(date +%a)"}
+${execi 7201 cat ~/.cache/timetable.json | jq ".$(date +%a)[0]"}
+${execi 7201 cat ~/.cache/timetable.json | jq ".$(date +%a)[1]"}
+$hr
 ${execi 1800 wt 0 pakistan}
-${execi 1800 wt -1}
 ]];
