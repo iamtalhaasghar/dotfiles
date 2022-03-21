@@ -289,9 +289,12 @@ exec_always --no-startup-id fix_xcursor
 ***REMOVED***
 exec --no-startup-id redshift-gtk
 exec --no-startup-id flameshot
+exec --no-startup-id gmailnotipy
 
 # Custom Keybindings
 bindsym XF86Eject exec flameshot gui
+bindsym XF86LaunchA exec firefox
+bindsym XF86LaunchB exec pcmanfm 
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
