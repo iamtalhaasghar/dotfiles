@@ -22,8 +22,8 @@ conky.text = [[
 #*/15 * * * * curl https://api.openweathermap.org/data/2.5/weather?units=metric&lat=&lon=&appid= -o ~/.cache/weather.json
 
 # Weather Info .i.e. Temprature - Description
-${font Poiret One:weight=Light:size=96}${alignc}${execi 1800 cat ~/.cache/weather.json | jq '.["main"]["temp"]'}°${font}
-${font Poiret One:weight=Light:size=17}${voffset 10}${alignc}${execi 1800 cat ~/.cache/weather.json | jq '.["name"]'}${font}
-${font Poiret One:weight=Light:size=50}${voffset 10}${alignc}${execi 1800 cat ~/.cache/weather.json | jq '.["weather"][0]["description"]'}${font}
-${font Poiret One:weight=Light:size=18}${voffset 10}${alignc}feels like ${execi 1800 cat ~/.cache/weather.json | jq '.["main"]["feels_like"]'}°${font}
+${font Poiret One:weight=Light:size=96}${alignc}${execi 900 cat ~/.cache/weather.json | jq '.["main"]["temp"]'}°${font}
+${font Poiret One:weight=Light:size=17}${voffset 10}${alignc}${execi 900 cat ~/.cache/weather.json | jq '.["name"]'}${font}
+${font Poiret One:weight=Light:size=50}${voffset 10}${alignc}${execi 900 cat ~/.cache/weather.json | jq '.["weather"][0]["description"]'}${font}
+${font Poiret One:weight=Light:size=18}${voffset 10}${alignc}feels like ${execi 900 cat ~/.cache/weather.json | jq '.["main"]["feels_like"]'}°${font}
 ]]

@@ -284,6 +284,7 @@ exec --no-startup-id pamac-tray
 #exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
+exec --no-startup-id conky -c ~/.config/conky/timetable_i3.conkyrc
 exec --no-startup-id conky -c ~/.config/conky/gontrihutions_i3.conkyrc
 exec --no-startup-id conky -c ~/.config/conky/weather_i3.conkyrc
 exec --no-startup-id conky -c ~/.config/conky/whatstrending_i3.conkyrc
