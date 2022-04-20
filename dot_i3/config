@@ -61,7 +61,7 @@ bindsym XF86MonBrightnessDown exec /home/talha/scripts/brtctrl.sh -2
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec palemoon
 bindsym $mod+F3 exec pcmanfm
-# bindsym $mod+F3 exec ranger
+#bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom
@@ -298,7 +298,7 @@ exec --no-startup-id ghnotifier
 # custom Keybindings
 bindsym XF86Eject exec flameshot gui
 bindsym XF86LaunchA exec rofi -show window
-bindsym XF86LaunchB exec pcmanfm 
+bindsym XF86LaunchB exec xfce4-terminal --hide-menubar --hide-scrollbar -e ranger
 bindsym XF86AudioPlay exec "playerctl play-pause; notify-send.sh 'pause/play' --expire-time=1000  --replace-file=/tmp/playerctl.notify"
 bindsym XF86AudioNext exec "playerctl next; notify-send.sh 'next' --expire-time=1000  --replace-file=/tmp/playerctl.notify"
 bindsym XF86AudioPrev exec "playerctl previous; notify-send.sh 'prev' --expire-time=1000  --replace-file=/tmp/playerctl.notify"
