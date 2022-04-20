@@ -1,13 +1,13 @@
 conky.config = {
-	alignment = 'top_left',
+	alignment = 'bottom_left',
 	background = true,
 	color2 = '2ECC71',
 	cpu_avg_samples = 2,
 	default_color = 'FFFFFF',
 	double_buffer = true,
-	font = 'Bitstream Vera Sans:size=8',
+	font = 'Bitstream Vera Sans:size=10',
 	gap_x = 15,
-	gap_y = 15,
+	gap_y = 35,
 	minimum_width = 200,
 	no_buffers = true,
 	own_window = true,
@@ -17,5 +17,6 @@ conky.config = {
 	use_xft = true,
 }
 conky.text = [[
-${execi 900 wt 0 pakistan}
+${execi 7201 cat ~/.cache/timetable.json | jq ".$(date +%a)[0]"}
+${execi 7201 cat ~/.cache/timetable.json | jq ".$(date +%a)[1]"}
 ]]
