@@ -1,0 +1,30 @@
+conky.config = {
+	alignment = 'bottom_right',
+	background = true,
+	color2 = '2ECC71',
+	cpu_avg_samples = 2,
+	default_color = 'FFFFFF',
+	double_buffer = true,
+	font = 'Bitstream Vera Sans:size=8',
+	gap_x = 25,
+	gap_y = 25,
+	minimum_width = 200,
+	no_buffers = true,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_transparent = true,
+	update_interval = 1.0,
+	use_xft = true,
+}
+conky.text = [[
+
+/ ${fs_used /}/${fs_size /} 
+${fs_bar 6 /}
+/home ${fs_used /home}/${fs_size /home}
+ ${fs_bar 6 /home}
+/timeshift ${fs_used /run/timeshift/backup}/${fs_size /run/timeshift/backup} 
+${fs_bar 6 /run/timeshift/backup}
+/mnt/programmer ${fs_used /mnt/programmer}/${fs_size /mnt/programmer} 
+${fs_bar 6 /mnt/programmer}
+
+]]
