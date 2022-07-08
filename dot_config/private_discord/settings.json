@@ -4,9 +4,9 @@
   "IS_MINIMIZED": false,
   "WINDOW_BOUNDS": {
     "x": 0,
-    "y": 0,
+    "y": 26,
     "width": 1280,
-    "height": 773
+    "height": 747
   },
   "SKIP_HOST_UPDATE": true,
   "OPEN_ON_STARTUP": false,
