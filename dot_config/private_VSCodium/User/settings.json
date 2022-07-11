@@ -1,8 +1,7 @@
 {
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Monokai",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "emmet.includeLanguages": {
-        "django-html": "html",
-        "jinja-html": "html"
+        "django-html": "html"
     }
 }
