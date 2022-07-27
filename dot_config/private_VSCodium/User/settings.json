@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Abyss",
+    "workbench.colorTheme": "Monokai",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "emmet.includeLanguages": {
         "django-html": "html"
