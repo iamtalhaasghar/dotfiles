@@ -116,6 +116,7 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias lg="lazygit"
+alias workonai="source ~/.local/share/venv/ai/bin/activate"
 
 export PATH=$PATH:$HOME/scripts
 
