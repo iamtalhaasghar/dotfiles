@@ -8,6 +8,6 @@ Exec=bash /home/programmer/.config/polybar/launch.sh --forest
 OnlyShowIn=XFCE;
 RunHook=0
 StartupNotify=false
-***REMOVED***inal=false
+Terminal=false
 Hidden=false
 

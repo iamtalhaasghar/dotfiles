@@ -8,6 +8,6 @@ Exec=wallpaper-reddit
 OnlyShowIn=XFCE;
 RunHook=0
 StartupNotify=false
-***REMOVED***inal=false
+Terminal=false
 Hidden=true
 

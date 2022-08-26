@@ -4,7 +4,7 @@
 
 DIR="$HOME/.config/polybar/forest"
 
-# ***REMOVED***inate already running bar instances
+# Terminate already running bar instances
 killall -q polybar
 
 # Wait until the processes have been shut down

@@ -1,4 +1,4 @@
-# ***REMOVED*** (https://github.com/iamtalhaasghar)
+# Talha Asghar (https://github.com/iamtalhaasghar)
 # 07-Feb-2022
 # A script which returns the name of current song 'yewtube' is playing
 
