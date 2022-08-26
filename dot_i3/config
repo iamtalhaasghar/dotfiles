@@ -312,7 +312,6 @@ exec --no-startup-id ghnotifier
 exec --no-startup-id discord
 exec --no-startup-id thunderbird
 exec --no-startup-id xfce4-terminal --hide-menubar --hide-scrollbar
-#exec --no-startup-id /usr/bin/firefox
 #exec --no-startup-id upwork
 #exec --no-startup-id whatsapp-for-linux
 exec --no-startup-id albert
