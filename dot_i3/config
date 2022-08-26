@@ -294,7 +294,7 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id conky -c ~/.config/conky/timetable_i3.conkyrc
+#exec --no-startup-id conky -c ~/.config/conky/timetable_i3.conkyrc
 exec --no-startup-id conky -c ~/.config/conky/gontrihutions_i3.conkyrc
 exec --no-startup-id conky -c ~/.config/conky/weather_i3.conkyrc
 exec --no-startup-id conky -c ~/.config/conky/whatstrending_i3.conkyrc
@@ -453,3 +453,6 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
+# rofi web search plugin
+bindsym --release $mod+s exec --no-startup-id rofi -lines 10 -padding 0 -show search -modi search:/mnt/programmer/projects/rofi-web-search/rofi-web-search.py -i -p "Search: "
