@@ -315,6 +315,7 @@ exec --no-startup-id xfce4-terminal --hide-menubar --hide-scrollbar
 #exec --no-startup-id upwork
 #exec --no-startup-id whatsapp-for-linux
 exec --no-startup-id albert
+exec --no-startup-id i3-battery-popup
 
 # custom Keybindings
 bindsym XF86Eject exec flameshot gui
