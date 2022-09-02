@@ -196,7 +196,7 @@ assign [class="Whatsapp-for-linux"] $ws5
 assign [class="Skype"] $ws5
 assign [class="vlc"] $ws6
 assign [class="Thunderbird"] $ws7
-assign [class="Upwork"] $ws8
+assign [class=".*"] $ws8
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
