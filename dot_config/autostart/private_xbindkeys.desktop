@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=xbindkeys --poll-rc
+Icon=
+Name=xbindkeys
+Path=
+Terminal=False
+Type=Application
