@@ -2,12 +2,10 @@
 Encoding=UTF-8
 Version=0.9.4
 Type=Application
-Name=wallpaper-reddit
+Name=rewal
 Comment=Fetch top wallpaper from reddit
-Exec=wallpaper-reddit
-OnlyShowIn=XFCE;
+Exec=rewal
+#OnlyShowIn=XFCE;
 RunHook=0
 StartupNotify=false
 Terminal=false
-Hidden=true
-
