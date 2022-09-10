@@ -1,5 +1,5 @@
 conky.config = {
-    alignment = 'bottom_left',
+    alignment = 'top_left',
     background = true,
     border_width = 1,
     cpu_avg_samples = 2,
@@ -12,9 +12,9 @@ conky.config = {
     draw_outline = false,
     draw_shades = false,
     extra_newline = false,
-    font = 'Poiret One:size=12:weight=Bold',
-    gap_x = 20,
-    gap_y = 10,
+    font = 'Poiret One:size=11:weight=Bold',
+    gap_x = 5,
+    gap_y = 5,
     minimum_height = 5,
     minimum_width = 5,
     net_avg_samples = 2,
@@ -39,7 +39,8 @@ conky.config = {
 }
 
 conky.text = [[
-
-${execp ~/scripts/wal-colors.sh -2}
-${execi 1800 wt 0 pakistan}${execp ~/scripts/wal-colors.sh -3}${execi 1800 wt -1}
+${execp ~/scripts/wal-colors.sh -3}
+${execi 1800 wt 0 pakistan}
+#${execp ~/scripts/wal-colors.sh -3}
+#${execi 1800 wt -1}
 ]];
