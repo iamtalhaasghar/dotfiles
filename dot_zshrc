@@ -124,3 +124,6 @@ export PATH=$PATH:$HOME/scripts
 #(cat ~/.cache/wal/sequences &)
 # pyenv initialization
 #eval "$(pyenv init -)"
+
+# Created by `pipx` on 2022-09-19 08:13:02
+export PATH="$PATH:/home/programmer/.local/bin"
