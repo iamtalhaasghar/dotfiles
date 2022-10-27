@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# A script to download subtitles of a youtube playlist / video.
+
+# Credits:
+# 	- Author: https://gist.github.com/aswathm78
+#	- Gist Link: https://gist.github.com/aswathm78/1f25ef7583d4498d6df28914d15e968a
+mkdir -vp storage/shared/Movies/drama
+cd ~/storage/shared/Movies/drama/
+#rm -v *
+yt-dlp $@
+termux-notification -c "Download complete"
+
