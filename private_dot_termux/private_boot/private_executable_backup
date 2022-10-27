@@ -1,0 +1,9 @@
+#!/data/data/com.termux/files/usr/bin/sh
+termux-wake-lock
+termux-wifi-enable true
+sleep 30
+rclone -v copy /data/data/com.termux/files/home/storage/shared/Backups talmeez:/backup/Backups
+rclone -v copy /data/data/com.termux/files/home/storage/shared/kxc/ t220:kxc
+termux-notification -c "daily backup complete"
+termux-wake-unlock
+exit
