@@ -121,16 +121,9 @@ alias workonai="source ~/.local/share/venv/ai/bin/activate"
 export PATH=$PATH:$HOME/scripts
 
 # load pywal color scheme
-#(cat ~/.cache/wal/sequences &)
+(cat ~/.cache/wal/sequences &)
 # pyenv initialization
 #eval "$(pyenv init -)"
 
 # Created by `pipx` on 2022-09-19 08:13:02
 export PATH="$PATH:/home/programmer/.local/bin"
-
-# Created by `pipx` on 2022-10-20 12:06:25
-export PATH="$PATH:/home/dev/.local/bin"
-
-[[ -s /data/data/com.termux/files/home/.autojump/etc/profile.d/autojump.sh ]] && source /data/data/com.termux/files/home/.autojump/etc/profile.d/autojump.sh
-
-        autoload -U compinit && compinit -u
