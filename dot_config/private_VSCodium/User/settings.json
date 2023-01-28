@@ -1,9 +1,10 @@
 {
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Monokai Dimmed",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "emmet.includeLanguages": {
         "django-html": "html"
     },
     "liveServer.settings.CustomBrowser": "/usr/bin/chromium",
-    "liveServer.settings.ChromeDebuggingAttachment": false
+    "liveServer.settings.ChromeDebuggingAttachment": false,
+    "window.zoomLevel": 2
 }

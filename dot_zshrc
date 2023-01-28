@@ -121,7 +121,7 @@ alias workonai="source ~/.local/share/venv/ai/bin/activate"
 export PATH=$PATH:$HOME/scripts
 
 # load pywal color scheme
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 # pyenv initialization
 #eval "$(pyenv init -)"
 
