@@ -1,10 +1,17 @@
 {
-    "workbench.colorTheme": "Monokai Dimmed",
-    "terminal.integrated.fontFamily": "MesloLGS NF",
-    "emmet.includeLanguages": {
-        "django-html": "html"
-    },
-    "liveServer.settings.CustomBrowser": "/usr/bin/chromium",
-    "liveServer.settings.ChromeDebuggingAttachment": false,
-    "window.zoomLevel": 2
+  "workbench.colorTheme": "Monokai Dimmed",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "liveServer.settings.CustomBrowser": "/usr/bin/chromium",
+  "liveServer.settings.ChromeDebuggingAttachment": false,
+  "workbench.startupEditor": "none",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "security.workspace.trust.untrustedFiles": "open"
 }
