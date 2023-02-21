@@ -8,5 +8,5 @@
 mkdir -vp storage/shared/Movies/ytdlp
 cd ~/storage/shared/Movies/ytdlp
 #rm -v *
-yt-dlp -o "%(playlist_index)s-%(title)s.%(ext)s" -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' $@
+yt-dlp -o "%(playlist_index)s-%(title)s.%(ext)s" -f mp4 $@
 termux-notification -c "Download complete"

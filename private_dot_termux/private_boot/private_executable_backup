@@ -1,16 +1,30 @@
 #!/data/data/com.termux/files/usr/bin/sh
+
 termux-wake-lock
 termux-wifi-enable true
 sleep 30
 
+echo "syncing kxc..."
 rclone -v --progress sync /data/data/com.termux/files/home/storage/shared/kxc/ t220:kxc
 
-rclone -v --progress sync /data/data/com.termux/files/home/storage/shared/Backups talmeez:/backup/Backups
 
-rclone -v --progress sync /data/data/com.termux/files/home/storage/shared/Documents talmeez:/backup/Documents
+for path in /data/data/com.termux/files/home/storage/shared/*
+do
+    dir="$(basename -- $path)"
+    if [ "$dir" = "AudioRecorder" ] || [ "$dir" = "Backups" ] || [ "$dir" = "Documents" ] || [ "$dir" = "Download" ] || [ "$dir" = "Pictures" ] || [ "$dir" = "QKSMS" ]
+    then
+        echo "syncing $dir"
+        rclone --progress sync $path android:/$dir
+    fi
+done
 
+echo "syncing whatsapp..."
+rclone -v --progress sync /data/data/com.termux/files/home/storage/shared/Android/media/com.whatsapp/ android:/whatsapp
+
+echo "syncing gallery..."
 rclone -v --progress sync /data/data/com.termux/files/home/storage/shared/DCIM gallery:a30
 
 termux-notification -c "daily backup complete"
+termux-wifi-enable false
 termux-wake-unlock
 exit
