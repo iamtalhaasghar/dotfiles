@@ -1,0 +1,4 @@
+l=$(md5sum /data/data/com.termux/files/home/storage/shared/kxc/kxc.kdbx)
+r=$(rclone md5sum t220:kxc/kxc.kdbx)
+echo $l 
+echo $r

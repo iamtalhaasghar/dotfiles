@@ -134,3 +134,6 @@ export PATH="$PATH:/home/dev/.local/bin"
 [[ -s /data/data/com.termux/files/home/.autojump/etc/profile.d/autojump.sh ]] && source /data/data/com.termux/files/home/.autojump/etc/profile.d/autojump.sh
 
         autoload -U compinit && compinit -u
+
+# Created by `pipx` on 2022-11-14 12:45:21
+export PATH="$PATH:/data/data/com.termux/files/home/.local/bin"

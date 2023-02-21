@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+curl https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts -o ~/.config/hosts.d/block.conf
+#sed 's/^[^#]*whatsapp/#&/' -i ~/.config/hosts.d/block.conf
+#sed 's/^[^#]*linkedin/#&/' -i ~/.config/hosts.d/block.conf
+#sed 's/^[^#]*twitter/#&/' -i ~/.config/hosts.d/block.conf
+cat ~/.config/hosts.d/*.conf > /etc/hosts
