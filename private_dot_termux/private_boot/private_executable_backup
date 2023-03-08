@@ -11,7 +11,7 @@ rclone -v --progress sync /data/data/com.termux/files/home/storage/shared/kxc/ t
 for path in /data/data/com.termux/files/home/storage/shared/*
 do
     dir="$(basename -- $path)"
-    if [ "$dir" = "AudioRecorder" ] || [ "$dir" = "Backups" ] || [ "$dir" = "Documents" ] || [ "$dir" = "Download" ] || [ "$dir" = "Pictures" ] || [ "$dir" = "QKSMS" ]
+    if [ "$dir" = "AudioRecorder" ] || [ "$dir" = "Backups" ] || [ "$dir" = "Documents" ] || [ "$dir" = "Download" ] || [ "$dir" = "Pictures" ] || [ "$dir" = "QKSMS" ] || [ "$dir" = "Ringtones" ] || [ "$dir" = "Notifications" ]
     then
         echo "syncing $dir"
         rclone --progress sync $path android:/$dir
