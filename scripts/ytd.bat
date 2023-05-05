@@ -1,1 +1,0 @@
-yt-dlp -o "%%(autonumber)s-%%(title)s.%%(ext)s" -f mp4  %*

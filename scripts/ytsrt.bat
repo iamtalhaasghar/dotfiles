@@ -1,1 +1,0 @@
-yt-dlp --write-auto-sub --sub-lang en --skip-download -o "%%(autonumber)s-%%(title)s.%%(ext)s" %*
