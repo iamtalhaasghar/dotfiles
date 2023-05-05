@@ -16,6 +16,7 @@ ZSH=~/.oh-my-zsh/
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="Soliah"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -116,14 +117,27 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias lg="lazygit"
-alias workonai="source ~/.local/share/venv/ai/bin/activate"
 
 export PATH=$PATH:$HOME/scripts
 
 # load pywal color scheme
 #(cat ~/.cache/wal/sequences &)
-# pyenv initialization
-#eval "$(pyenv init -)"
 
 # Created by `pipx` on 2022-09-19 08:13:02
 export PATH="$PATH:/home/programmer/.local/bin"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
+        . "/usr/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
