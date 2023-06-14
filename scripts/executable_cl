@@ -3,13 +3,23 @@
 import sys
 import os
 
-repourl = sys.argv[1] #https://github.com/mwaseemrandhawa/Urdu-News-Headline-Dataset
-l_slash = repourl.rfind('/') # last forward slash index
-reponame = repourl[l_slash+1:]
-sl_slash = repourl.rfind('/', 0, l_slash) # second last forward slash index
-username = repourl[sl_slash+1: l_slash]
+repourl = sys.argv[1]
+url = repourl.replace('.git', '')
+if url.startswith('https:'):
+    #https://github.com/mwaseemrandhawa/Urdu-News-Headline-Dataset
+    l_slash = url.rfind('/') # last forward slash index
+    reponame = url[l_slash+1:]
+    sl_slash = url.rfind('/', 0, l_slash) # second last forward slash index
+    username = url[sl_slash+1: l_slash]
+elif url.startswith('git@'):
+    #git@github.com:mps-youtube/yewtube.git
+    i = url.find(':')
+    j = url.find('/')
+    username = url[i+1:j]
+    reponame = url[j+1:]
 
-clonedir = os.path.join(os.getcwd(), f'{reponame}_{username}')
+clonedir = os.path.join('~/projects/clones', f'{reponame}_{username}')
+os.makedirs(clonedir, exist_ok=True)
 
 cmd = f'git clone {repourl} {clonedir}'
 print('Running:', cmd)
