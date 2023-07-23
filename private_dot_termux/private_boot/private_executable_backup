@@ -24,6 +24,9 @@ rclone -v --progress sync /data/data/com.termux/files/home/storage/shared/Androi
 echo "syncing gallery..."
 rclone -v --progress sync /data/data/com.termux/files/home/storage/shared/DCIM gallery:a30
 
+#enable cron daemon
+sv-enable crond 
+
 termux-notification -c "daily backup complete"
 termux-wifi-enable false
 termux-wake-unlock

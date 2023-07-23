@@ -1,3 +1,5 @@
-curl https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts -o ~/storage/shared/Download/hosts.txt
-sed -i /linkedin/s/^/#/ ~/storage/shared/Download/hosts.txt
-sed -i /twitter/s/^/#/ ~/storage/shared/Download/hosts.txt
+out=~/storage/shared/Download/hosts_tw_in.txt
+curl https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts -o $out
+sed -i /linkedin/s/^/#/ $out
+sed -i /twitter/s/^/#/ $out
+sed -i /twimg/s/^/#/ $out
