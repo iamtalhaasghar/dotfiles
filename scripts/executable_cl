@@ -18,7 +18,7 @@ elif url.startswith('git@'):
     username = url[i+1:j]
     reponame = url[j+1:]
 
-clonedir = os.path.join('~/projects/clones', f'{reponame}_{username}')
+clonedir = os.path.join('/home/{os.getlogin()}/projects/clones', f'{reponame}_{username}')
 os.makedirs(clonedir, exist_ok=True)
 
 cmd = f'git clone {repourl} {clonedir}'

@@ -1,7 +1,0 @@
-[Desktop Entry]
-Exec=/home/programmer/.local/bin/ghnotifier
-Icon=dialog-scripts
-Name=ghnotifier
-Path=
-Type=Application
-X-KDE-AutostartScript=true
