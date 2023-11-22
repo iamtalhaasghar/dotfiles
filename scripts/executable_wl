@@ -1,0 +1,1 @@
+mariadb  -u admin -padmin -D work -e "select * from time_track where active=true;"

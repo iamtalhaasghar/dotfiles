@@ -1,0 +1,1 @@
+mariadb  -u admin -padmin -D work -e "insert into time_track(start, active, category) values(NOW(), true, 'office');"

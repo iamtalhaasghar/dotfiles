@@ -1,0 +1,1 @@
+mariadb  -u admin -padmin -D work -e "update time_track set active=false,end=NOW() where active=true;"
