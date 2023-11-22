@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-ZSH=~/.oh-my-zsh/
+ZSH=/usr/share/ohmyzsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -76,7 +76,7 @@ ZSH_CUSTOM=~/.oh-my-zsh/custom
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git)
 
 
 # User configuration
@@ -170,3 +170,6 @@ if [ -f '/usr/local/src/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/src
 if [ -f '/usr/local/src/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/src/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PIPENV_VENV_IN_PROJECT=1
+
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
