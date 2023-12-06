@@ -160,7 +160,6 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH=$PATH:/home/programmer/go/bin
 
 alias s='ssh'
-alias shaier="ssh 'haiery11c\talha asghar@192.168.100.11'"
 #export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # The next line updates PATH for the Google Cloud SDK.
