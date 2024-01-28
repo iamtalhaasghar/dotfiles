@@ -1,5 +1,16 @@
-out=~/storage/shared/Download/hosts_tw_in.txt
-curl https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts -o $out
-sed -i /linkedin/s/^/#/ $out
-sed -i /twitter/s/^/#/ $out
-sed -i /twimg/s/^/#/ $out
+out=~/storage/shared/Download/hosts.txt
+
+#url=https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts
+
+url=https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/hosts.txt 
+
+curl $url -o $out
+
+#sed -i /linkedin/s/^/#/ $out
+#sed -i /twitter/s/^/#/ $out
+#sed -i /reddit/s/^/#/ $out
+#sed -i /twimg/s/^/#/ $out
+
+
+echo "0.0.0.0 media.licdn.com" >> $out
+echo "0.0.0.0 twimg.com" >> $out

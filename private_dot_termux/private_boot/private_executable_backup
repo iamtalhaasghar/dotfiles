@@ -21,11 +21,12 @@ done
 echo "syncing whatsapp..."
 rclone -v --progress sync /data/data/com.termux/files/home/storage/shared/Android/media/com.whatsapp/ android:/whatsapp
 
-echo "syncing gallery..."
-rclone -v --progress sync /data/data/com.termux/files/home/storage/shared/DCIM gallery:a30
+echo "copying gallery..."
+# dont sync bcz it will delete files in cloud. just copy current ones
+rclone -v --progress copy /data/data/com.termux/files/home/storage/shared/DCIM gallery:a30
 
 #enable cron daemon
-sv-enable crond 
+#sv-enable crond 
 
 termux-notification -c "daily backup complete"
 termux-wifi-enable false

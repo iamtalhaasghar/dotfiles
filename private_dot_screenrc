@@ -1,4 +1,7 @@
-# Credits: https://gist.github.com/joaopizani/2718397
+# A killer GNU Screen Config for termux
+# Credits: 
+#   * https://gist.github.com/joaopizani/2718397
+#   * https://github.com/iamtalhaasghar/dotfiles/tree/mobile 
 
 # the following two lines give a two-line status, with the current window highlighted
 hardstatus alwayslastline
@@ -19,10 +22,11 @@ defbce on
 mousetrack on
 
 # default windows
-screen -t Shell1  1 bash
-screen -t Shell2  2 bash
-screen -t Python  3 python
-screen -t Media   4 bash
+screen -t htop      1 htop
+screen -t bmon      2 bmon
+screen -t bash      3 bash
+screen -t bash      4 bash
+screen -t bash      5 bash
 select 0
 bind c screen 1 # window numbering starts at 1 not 0
 bind 0 select 10
