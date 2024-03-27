@@ -1,3 +1,7 @@
 {
-    "python.defaultInterpreterPath": "/bin/python"
+    "git.enableSmartCommit": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.confirmSync": false
 }
