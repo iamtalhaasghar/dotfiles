@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/sbin:$PATH
 
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/ohmyzsh
@@ -76,7 +76,7 @@ ZSH_CUSTOM=~/.oh-my-zsh/custom
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump)
+#plugins=(git autojump)
 
 
 # User configuration
@@ -110,7 +110,7 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 #source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -157,8 +157,6 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 
 #eval "$(pyenv virtualenv-init -)"
 
-export PATH=$PATH:/home/programmer/go/bin
-
 alias s='ssh'
 #export QT_QPA_PLATFORMTHEME="qt5ct"
 
@@ -170,5 +168,60 @@ if [ -f '/usr/local/src/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/loc
 
 export PIPENV_VENV_IN_PROJECT=1
 
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#-------------------------------------------
+# copied from https://wiki.debian.org/Zsh
+
+# Aliases
+alias ls='ls --color=auto'
+alias ll='ls -lah --color=auto'
+alias grep='grep --color=auto'
+alias ec="$EDITOR $HOME/.zshrc" # edit .zshrc
+alias sc="source $HOME/.zshrc"  # reload zsh configuration
+
+# Set up the prompt - if you load Theme with zplugin as in this example, this will be overriden by the Theme. If you comment out the Theme in zplugins, this will be loaded.
+autoload -Uz promptinit
+promptinit
+#prompt adam1            # see Zsh Prompt Theme below
+
+# Use vi keybindings even if our EDITOR is set to vi
+bindkey -e
+
+setopt histignorealldups sharehistory
+
+# Keep 5000 lines of history within the shell and save it to ~/.zsh_history:
+HISTSIZE=5000
+SAVEHIST=5000
+HISTFILE=~/.zsh_history
+
+# Use modern completion system
+autoload -Uz compinit
+compinit
+
+# zplug - manage plugins
+source /usr/share/zplug/init.zsh
+zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/sudo", from:oh-my-zsh
+zplug "plugins/command-not-found", from:oh-my-zsh
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-completions"
+zplug "junegunn/fzf"
+zplug "themes/suvash", from:oh-my-zsh, as:theme   # Theme
+zplug "plugins/autojump", from:oh-my-zsh
+
+# zplug - install/load new plugins when zsh is started or reloaded
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+zplug load
+
+#-------------------------------------------
+
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
+alias ythd='ytdlp -f bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best $1'
