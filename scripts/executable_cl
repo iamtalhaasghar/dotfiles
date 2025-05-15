@@ -25,4 +25,5 @@ os.makedirs(clonedir, exist_ok=True)
 cmd = f'git clone {repourl} {clonedir}'
 print('Running:', cmd)
 os.system(cmd)
-
+cmd = f'pushd {clonedir}'
+os.system(cmd)
