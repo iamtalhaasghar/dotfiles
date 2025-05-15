@@ -19,8 +19,10 @@ compinit
 # End of lines added by compinstall
 # The following lines were added by me
 
-export PATH=$PATH:$HOME/scripts
 alias lg="lazygit"
+alias s='ssh'
+
+export PATH=$PATH:$HOME/scripts
 
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
