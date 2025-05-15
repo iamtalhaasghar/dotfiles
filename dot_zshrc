@@ -19,6 +19,10 @@ compinit
 # End of lines added by compinstall
 # The following lines were added by me
 
+alias ls='ls --color=auto'
+alias ll='ls -lah --color=auto'
+alias grep='grep --color=auto'
+
 alias lg="lazygit"
 alias s='ssh'
 
