@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=/home/programmer/.local/bin/ghnotifier
-X-GNOME-Autostart-enabled=false
-NoDisplay=false
-Hidden=false
-Name[en_US]=ghnotifier
-Comment[en_US]=No description
-X-GNOME-Autostart-Delay=0
